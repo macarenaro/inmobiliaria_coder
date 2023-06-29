@@ -1,0 +1,43 @@
+/*Nosotros------------------------------------------------------------------------*/
+.contenedor-grid{
+    display: grid; 
+    grid-template-columns: 25% 40% 25%; 
+    grid-template-rows: 100px 150px 300px 300px 100px; 
+    gap: 2px 2px; 
+    grid-template-areas: 
+        "h1 h1 h1"
+        "casa1 texto1 texto1"
+        "casa1 casa2 casa2"
+        "texto2 casa3 texto3"
+        "h2 h2 h2"; 
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    color:$azul;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    p{
+        text-align: justify;
+        margin: 0 25px;
+        color: $celeste;
+        font-weight: 600;
+        span{
+            color: $rojo;
+            text-decoration: underline;
+        }
+        
+    }
+    
+    .grid-titulo-1 { grid-area: h1; }
+    .grid-img-1 { grid-area: casa1; }
+    .grid-texto-1 { grid-area: texto1; }
+    .grid-img-3 { grid-area: casa2; }
+    .grid-texto-2 { grid-area: texto2; }
+    .grid-img-2 { grid-area: casa3; }
+    .grid-texto-3 { grid-area: texto3; }
+    .grid-titulo-2 { grid-area: h2; }
+}

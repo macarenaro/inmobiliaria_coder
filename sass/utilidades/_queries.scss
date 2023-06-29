@@ -1,0 +1,50 @@
+@media only screen and (max-width:500px) {
+    /*header-------------------------------*/
+    header{
+        flex-direction: column;
+        nav{
+            width: 100%;
+            ul{
+                margin: 0 10px;
+                a{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+    }
+    
+
+    /*nosotros-----------------------------------*/
+    .contenedor-grid{
+        grid-template-areas: 
+        "h1"
+        "texto1"
+        "casa1"
+        "texto2" 
+        "casa3" 
+        "texto3"
+        "h2"; 
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 250px repeat(4,200px) 150px;
+        img{
+            width: 95%;
+        }
+        .grid-img-3 { display: none; } 
+        .grid-titulo-2, .grid-titulo-1, .ventas h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+    }
+    
+    /*footer-------------------------------------*/
+    footer {
+        div{
+            width: 50%;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}

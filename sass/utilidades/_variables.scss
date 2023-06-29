@@ -1,0 +1,15 @@
+$font: 'Libre Baskerville', serif;
+// paleta
+$azul: #041562;
+$celeste: #11468F;
+$rojo:#DA1212;
+$blanco: #FFFFFF;
+
+// mixin
+
+@mixin flex ($direccion,$justify,$aling){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling;
+}

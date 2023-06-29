@@ -1,0 +1,46 @@
+/*header*/
+
+header{
+    .mia{
+        background-color: $azul;
+        img{
+            width: 80px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .link{
+            font-family: $font;
+            color: $blanco;
+            font-size: 1.5rem;
+            
+        }
+    }
+}
+
+/*---------------------------*/
+
+/*Footer */
+footer{
+    background-color:$azul;
+    color: $blanco;
+    @include flex( row, space-between,center );
+    padding: 10px 0px;
+    .logoTelefono{
+        margin-left: 10px;
+        width: 50px;
+    }
+    div{
+        width: 30%;
+        @include flex( row, space-around,center );
+        .logoFacebook{
+            border-radius: 50%;
+            background-color: $blanco;
+            border: 1px solid $blanco;
+            width: 50px;
+        }
+        .logoInstagram{
+            @extend .logoFacebook;
+            border-radius: 25%;
+        }
+    }
+}

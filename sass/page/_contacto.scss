@@ -1,0 +1,50 @@
+/* Contacto----------------------------------------------------------------------- */
+.mainContacto{
+    h1{
+        text-align: center;
+        font-size: 4rem;
+        text-decoration: underline;
+        color: $azul;
+    }
+    .mapa{
+        @include flex (row, space-evenly, center);
+        margin: 20px 0px;
+    }
+    .formulario{
+        .mensaje{
+            text-align: center;
+            margin: 20px 0;
+            font-size: 3rem;
+            color: $azul;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        form{
+            background-color: $celeste;
+            width: 40%;
+            margin: 0 auto;
+            border-radius: 10px;
+            font-size: 2rem;
+            @include flex (column, space-evenly, center);
+            margin-bottom: 20px;
+            padding: 10px 0;
+            color: $blanco;
+            input{
+                width: 80%;
+                margin: 10px auto;
+            }
+            
+            .boton{
+                width: 100px;
+                margin-top: 10px;
+                padding: 10px;
+                background-color: $blanco;
+                border-radius: 7px;
+                color:$celeste;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

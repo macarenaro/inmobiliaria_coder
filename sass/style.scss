@@ -1,0 +1,34 @@
+@import "utilidades/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: $font;
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+//partials
+
+@import "utilidades/hearder-footer";
+@import "page/index";
+@import "page/alquiler";
+@import "page/ventas";
+@import "page/nosotros";
+@import "page/contacto";
+@import "utilidades/queries";
